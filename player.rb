@@ -1,9 +1,11 @@
-class User
+class Player
   attr_reader :name
-  attr_accessor :lives, :alive?
+  attr_accessor :lives, :alive
 
-  def initialize(name, lives, alive?)
+  def initialize(name)
     @name = name
+    @lives = 3
+    @alive = true
   end
 
   def lives_remaining
